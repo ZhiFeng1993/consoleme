@@ -40,12 +40,12 @@ bootstrap: docker_volume dynamo redis
 .PHONY: dynamo
 dynamo:
 	@echo "--> Configuring Dynamo (Make sure local dynamo is enabled on port 8000)"
-	python scripts/initialize_dynamodb_oss.py
+	python3 scripts/initialize_dynamodb_oss.py
 
 .PHONY: redis
 redis:
 	@echo "--> Configuring Redis"
-	python scripts/initialize_redis_oss.py
+	python3 scripts/initialize_redis_oss.py
 
 .PHONY: test
 test: clean

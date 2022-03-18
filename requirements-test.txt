@@ -230,7 +230,7 @@ redis==3.5.3
     # via
     #   -c requirements.txt
     #   redislite
-redislite==6.0.674960
+redislite==6.2.6
     # via
     #   -c requirements.txt
     #   -r requirements-test.in

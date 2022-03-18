@@ -7,18 +7,18 @@ services:
       - "6379:6379"
     image: "redis:alpine"
 
-  consoleme-dynamodb:
-    image: "cnadiminti/dynamodb-local"
-    container_name: consoleme-dynamodb
-    entrypoint: java
-    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /data -port 8005"
-    ports:
-      - "8005:8005"
-    restart: always
-    volumes:
-      - ./dynamodb-data:/data:delegated
-    environment:
-      - AWS_REGION=${EC2_REGION:-us-east-1}
+  # consoleme-dynamodb:
+  #   image: "cnadiminti/dynamodb-local"
+  #   container_name: consoleme-dynamodb
+  #   entrypoint: java
+  #   command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /data -port 8005"
+  #   ports:
+  #     - "8005:8005"
+  #   restart: always
+  #   volumes:
+  #     - ./dynamodb-data:/data:delegated
+  #   environment:
+  #     - AWS_REGION=${EC2_REGION:-us-east-1}
 
   consoleme-dynamodb_admin:
     container_name: consoleme-dynamodb-admin

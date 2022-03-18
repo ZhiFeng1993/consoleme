@@ -1,0 +1,44 @@
+diff --git a/requirements-test.txt b/requirements-test.txt
+index 884e3cb..8dab20a 100644
+--- a/requirements-test.txt
++++ b/requirements-test.txt
+@@ -488,7 +488,7 @@ mypy-extensions==0.4.3
+     #   mypy
+ nodeenv==1.6.0
+     # via pre-commit
+-numpy==1.19.5
++numpy==1.21.2
+     # via
+     #   -c requirements.txt
+     #   -r requirements.txt
+@@ -773,7 +773,7 @@ redis==3.5.3
+     #   -r requirements.txt
+     #   celery
+     #   redislite
+-redislite==6.0.674960
++redislite==6.2.6
+     # via
+     #   -c requirements.txt
+     #   -r requirements-test.in
+diff --git a/requirements.txt b/requirements.txt
+index facb577..79c4c0f 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -235,7 +235,7 @@ multidict==5.1.0
+     #   yarl
+ mypy-extensions==0.4.3
+     # via black
+-numpy==1.19.5
++numpy==1.21.2
+     # via
+     #   -r requirements.in
+     #   pandas
+@@ -358,7 +358,7 @@ redis==3.5.3
+     #   -r requirements.in
+     #   celery
+     #   redislite
+-redislite==6.0.674960
++redislite==6.2.6
+     # via -r requirements.in
+ regex==2021.8.28
+     # via
